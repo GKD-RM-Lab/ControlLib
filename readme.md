@@ -12,5 +12,5 @@
 你可以参阅[quick_start](tutorials/quick_start.md)，快速启动电机，并学会如何使用控制器
 ### 进阶教程
 [进阶教程](tutorials/advanced.md)中展示了如何创建自己的控制器/执行器/io接口
-
-
+### MISC
+[打杂的看这里](tutorials/misc.md)
