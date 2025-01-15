@@ -1,7 +1,6 @@
 #include "dji_motor.hpp"
 
 #include "io.hpp"
-#include "iostream"
 
 #include <mutex>
 #include <chrono>
@@ -69,7 +68,6 @@ namespace Hardware {
     }
 
     void DJIMotor::set_directly(const float x) {
-        std::cout << x << std::endl;
         give_current = static_cast<int16_t>(x);
     }
 
