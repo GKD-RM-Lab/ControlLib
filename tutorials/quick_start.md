@@ -62,7 +62,7 @@ motor.set(5000);
 Pid::PidPosition pid(M3508_SPEED_PID_CONFIG, motor.data_.output_angular_velocity);
 ```
 - **PidPosition**的构造器接受两个参数，一个PidConfig和一个float &，分别表示pid参数和要控制的量
-- 这里创建了一个增量式pid用于控制motor的转子角速度
+- 这里创建了一个增量式pid用于控制motor的输出角速度
 
 #### 接入电机
 提供两种方法方便的接入电机
