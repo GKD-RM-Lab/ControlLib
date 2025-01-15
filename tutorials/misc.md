@@ -104,3 +104,5 @@ sudo rm /lib/modules/$(uname -r)/kernel/drivers/net/can/usb/gs_usb.ko.zst
 如果哪里没按照预期工作，哈哈，那100%是你们自己的问题😃
 
 ![](img/mbh.jpg)
+
+**孩子们，这不是我**
