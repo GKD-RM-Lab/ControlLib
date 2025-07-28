@@ -23,3 +23,11 @@ constexpr Pid::PidConfig M6020_POSITION_PID_CONFIG{
     30.0f,
     0.0f,
 };
+
+constexpr Pid::PidConfig M2006_SPEED_PID_CONFIG{
+    3000.f,
+    20.f,
+    0.5f,
+    30000.0f,
+    15000.0f,
+};
