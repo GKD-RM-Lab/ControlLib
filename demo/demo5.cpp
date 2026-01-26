@@ -4,6 +4,7 @@
 #include "pid.hpp"
 #include "config.hpp"
 #include "serial_interface.hpp"
+#include "exiter.hpp"
 
 fp32 yaw = 0;
 fp32 pitch = 0;
@@ -54,8 +55,8 @@ int main() {
 
     yaw_motor.setCtrl(yaw_pid1 >> yaw_pid2 >> inv);
     pitch_motor.setCtrl(pitch_pid1 >> pitch_pid2);
-
-    while (true) {
+    Exiter::Exiter exiter;
+    while (!exiter.exit()) {
         yaw_motor.set(0);
         pitch_motor.set(0);
         UserLib::sleep_ms(1);
